@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\KGEU.CourseWork.exe.config
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\KGEU.CourseWork.exe
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\KGEU.CourseWork.pdb
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.csprojAssemblyReference.cache
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.Form1.resources
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.Properties.Resources.resources
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.csproj.GenerateResource.cache
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.exe
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.pdb
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\KGEU.CourseWork.JSONHelper.dll
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\KGEU.CourseWork.JSONHelper.pdb
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.csproj.CopyComplete
+C:\Users\User\source\repos\KGEU.CourseWork\KGEU.CourseWork\obj\Debug\KGEU.CourseWork.Autorization.resources

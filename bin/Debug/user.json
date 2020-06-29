@@ -1,0 +1,482 @@
+[
+  {
+    "$id": "1",
+    "typeTask": 0,
+    "taskDescription": "Для хранения данных в программе применяются переменные. 
+Переменная представляет именнованную область памяти, в которой хранится значение определенного типа. Переменная имеет тип, имя и значение. Тип определяет, какого рода информацию может хранить переменная.Перед использованием любую переменную надо определить. Синтаксис определения переменной выглядит следующим образом:
+	тип имя_переменной;
+В данном случае определена переменная name, которая имеет тип string. то есть переменная представляет строку. Поскольку определение переменной представляет собой инструкцию, то после него ставится точка с запятой.
+	string name;
+После определения переменной можно присвоить некоторое значение:
+	name = \" Tom\"; "
+  },
+  {
+    "$id": "2",
+    "typeTask": 0,
+    "taskDescription": " Рассмотрим несколько типов данных которые нам пригодятся
+bool: хранит значение true или false (логические литералы). Представлен системным типом System.Boolean
+	
+	bool alive = true;
+	bool isDead = false;
+	
+int: хранит целое число от -2147483648 до 2147483647 и занимает 4 байта. Представлен системным типом System.Int32. Все целочисленные литералы по умолчанию представляют значения типа int:
+
+	int a = 10;
+	int b = 0b101;  // бинарная форма b =5
+	int c = 0xFF;   // шестнадцатеричная форма c = 255
+	
+string: хранит набор символов Unicode. Представлен системным типом System.String. Этому типу соответствуют символьные литералы.
+
+	string hello = \"Hello\";
+	string word = \"world\";
+
+object: может хранить значение любого типа данных и занимает 4 байта на 32-разрядной платформе и 8 байт на 64-разрядной платформе. Представлен системным типом System.Object, который является базовым для всех других типов и классов .NET.
+
+	object a = 22;
+	object b = 3.14;
+	object c = \"hello code\";
+"  
+  },
+  {
+    "$id": "4",
+    "typeTask": 1,
+    "taskDescription": "Впишите подходяшие типы данных",
+    "firstAnswer": "целочисленное значение 32 бита.
+Строка
+Логическая",
+    "secondAnswer": "int",
+	"thirdthAnswer": "string",
+	"fourth": "bool"
+  },
+  {
+    "$id": "5",
+    "typeTask": 0,
+    "taskDescription": "Для вывода информации на консоль используется встроенный метод Console.WriteLine То есть, если мы хотим вывести некоторую информацию на консоль, то нам надо передать ее в метод Console.WriteLine:
+
+using System;
+ 
+namespace HelloApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string hello = \"Привет мир\";
+            Console.WriteLine(hello);
+            Console.WriteLine(\"Добро пожаловать в C#!\");
+            Console.WriteLine(\"Пока мир...\");
+            Console.WriteLine(24.5);
+             
+            Console.ReadKey();
+        }
+    }
+}"
+  },
+  {
+    "$id": "6",
+    "typeTask": 2,
+    "taskDescription": "Выберете правильный метод для вывода информации в консоль",
+    "firstAnswer": "Console.WriteLine();",
+    "secondAnswer": "Console.Log()",
+	"thirdthAnswer": "Console();",
+	"fourth": "output();"
+  },
+  {
+    "$id": "7",
+    "typeTask": 0,
+    "taskDescription": "В C# используется большинство операций, которые применяются и в других языках программирования. Операции представляют определенные действия над операндами - участниками операции. В качестве операнда может выступать переменной или какое-либо значение (например, число). Операции бывают унарными (выполняются над одним операндом), бинарными - над двумя операндами и тернарными - выполняются над тремя операндами. Рассмотрим все виды операций.
+	
+Операция сложения двух чисел:
+
+	int x = 10;
+	int z = x + 12; // 22
+	
+Операция вычитания двух чисел:
+	
+	int x = 10;
+	int z = x - 6; // 4
+	
+Операция умножения двух чисел:
+
+	int x = 10;
+	int z = x / 5; // 2
+ 
+При делении стоит учитывать, что если оба операнда представляют целые числа, то результат также будет округляться до целого числа:
+	
+	int x = 13;
+	int z = x / 5; // результат 2, остаток 3 пропадет
+	
+Также есть ряд унарных операций, в которых принимает участие один операнд:
+
+	int i = 1;
+	i++; // i = 2
+	i--; // i = 1"
+  },
+  {
+    "$id": "8",
+    "typeTask": 2,
+    "taskDescription": "\n\nВыбрете не правильно объявление переменной",
+    "firstAnswer": "bool x = 1;",
+    "secondAnswer": "int x = 10;",
+	"thirdthAnswer": "byte x = true;",
+	"fourth": "string x = \"Строка\""
+  },
+  {
+    "$id": "9",
+    "typeTask": 0,
+    "taskDescription": "		Консольный ввод-вывод
+Для вывода информации на консоль мы уже использовали встроенный метод Console.WriteLine. То есть, если мы хотим вывести некоторую информацию на консоль, то нам надо передать ее в метод Console.WriteLine:
+
+static void Main(string[] args)
+{
+    string hello = \"Привет мир\";
+    Console.WriteLine(hello);
+    Console.WriteLine(\"Добро пожаловать в C#!\");
+    Console.WriteLine(\"Пока мир...\");
+    Console.WriteLine(24.5);
+     
+    Console.ReadKey();
+}
+
+Консольный вывод поддерживает множество режимов. Например интерполяцию это в одной строке значения сразу нескольких переменных.
+
+string name = \"Tom\";
+int age = 34;
+double height = 1.7;
+Console.WriteLine($\"Имя: {name}  Возраст: {age}  Рост: {height}м\");
+
+	",
+  },
+  {
+    "$id": "10",
+    "typeTask": 2,
+    "taskDescription": "Какой вариант не верный",
+    "firstAnswer": "Console.(WriteLine);",
+    "secondAnswer": "Console.WriteLine(true);",
+	"thirdthAnswer": "Console.WriteLine(123);",
+	"fourth": "Console.WriteLine(\"сторока\");"
+  },
+  {
+    "$id": "11",
+    "typeTask": 0,
+    "taskDescription": "Циклы являются управляющими конструкциями, позволяя в зависимости от определенных условий выполнять некоторое действие множество раз. В C# имеются следующие виды циклов:
+
+for
+
+foreach
+
+while
+
+do...while
+
+Цикл for имеет следующее формальное определение:
+
+for ([инициализация счетчика]; [условие]; [изменение счетчика])
+{
+    // действия
+}
+
+Рассмотрим стандартный цикл for:
+
+for (int i = 0; i < 9; i++)
+{
+    Console.WriteLine($\"Квадрат числа {i} равен {i*i}\");
+}
+
+В цикле do сначала выполняется код цикла, а потом происходит проверка условия в инструкции while. И пока это условие истинно, цикл повторяется. Например:
+
+int i = 6;
+do
+{
+    Console.WriteLine(i);
+    i--;
+}
+while (i > 0);
+
+Цикл while
+В отличие от цикла do цикл while сразу проверяет истинность некоторого условия, и если условие истинно, то код цикла выполняется:
+
+int i = 6;
+while (i > 0)
+{
+    Console.WriteLine(i);
+    i--;
+}
+",
+  },
+  {
+    "$id": "12",
+    "typeTask": 2,
+    "taskDescription": "Что выведет программа?
+	
+int i, j, s = 0;
+for (i = 1, j = 5; i < j; ++i, --j)
+{
+    s += i;
+}
+Console.WriteLine(s);",
+    "firstAnswer": "3",
+    "secondAnswer": "1",
+	"thirdthAnswer": "5",
+	"fourth": "Ошибка компиляции"
+  },
+  {
+    "$id": "13",
+    "typeTask": 0,
+    "taskDescription": "Массивы
+Массив представляет набор однотипных данных. Объявление массива похоже на объявление переменной за тем исключением, что после указания типа ставятся квадратные скобки:
+
+тип_переменной[] название_массива;
+
+int[] numbers;
+
+После определения переменной массива мы можем присвоить ей определенное значение:
+
+int[] nums = new int[4];
+
+Здесь вначале мы объявили массив nums, который будет хранить данные типа int. Далее используя операцию new, мы выделили память для 4 элементов массива: new int[4]. Число 4 еще называется длиной массива. При таком определении все элементы получают значение по умолчанию, которое предусмотренно для их типа. Для типа int значение по умолчанию - 0.
+
+Также мы сразу можем указать значения для этих элементов:
+
+int[] nums2 = new int[4] { 1, 2, 3, 5 };
+ 
+int[] nums3 = new int[] { 1, 2, 3, 5 };
+ 
+int[] nums4 = new[] { 1, 2, 3, 5 };
+ 
+int[] nums5 = { 1, 2, 3, 5 };
+
+Цикл foreach
+
+Цикл foreach предназначен для перебора элементов в контейнерах, в том числе в массивах. Формальное объявление цикла foreach:
+
+Например:
+
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+foreach (int i in numbers)
+{
+    Console.WriteLine(i);
+}
+"
+  },
+  {
+    "$id": "14",
+    "typeTask": 2,
+    "taskDescription": "Выберете правильный ответ",
+    "firstAnswer": "int[] array = { 68, 456, 0, 8 };",
+    "secondAnswer": "int[] array = new int[4] { \"1\", \"2\", \"3\", \"7\" };",
+	"thirdthAnswer": "int[] array = new int[3] { 1, 2, 3, 5 };",
+	"fourth": "int array = new { 1, 2, 3, 5 };"
+  },
+  {
+    "$id": "15",
+    "typeTask": 0,
+    "taskDescription": "		Методы
+Если переменные хранят некоторые значения, то методы содержат собой набор операторов, которые выполняют определенные действия. По сути метод - это именованный блок кода, который выполняет некоторые действия.
+
+Общее определение методов выглядит следующим образом:
+
+[модификаторы] тип_возвращаемого_значения название_метода ([параметры])
+{
+    // тело метода
+}
+
+Модификаторы и параметры необязательны.
+
+Например, по умолчанию консольная программа на языке C# должна содержать как минимум один метод - метод Main, который является точкой входа в приложение:
+
+static void Main(string[] args)
+{
+     
+}
+
+Определим еще пару методов.
+
+static void SayHello()
+{
+    Console.WriteLine(\"Hello\");
+}
+static void SayGoodbye()
+{
+    Console.WriteLine(\"GoodBye\");
+}
+
+Вызов методов
+Чтобы использовать методы SayHello и SayGoodbye в программе, нам надо вызвать их в методе Main.
+
+Для вызова метода указывается его имя, после которого в скобках идут значения для его параметров (если метод принимает параметры).
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        SayHello();
+        SayGoodbye();
+
+        Console.ReadKey();
+    }
+
+    static void SayHello()
+    {
+        Console.WriteLine(\"Hello\");
+    }
+    static void SayGoodbye()
+    {
+        Console.WriteLine(\"GoodBye\");
+    }
+}
+",
+  },
+  {
+    "$id": "16",
+    "typeTask": 0,
+    "taskDescription": "Далее будут тесты для закрепления материала."
+  },
+  {
+    "$id": "17",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено в результате выполнения программы?
+class Program  
+{  
+    static void Main(string[] args)  
+    {  
+        var a = null;  
+        a = 10;  
+        Console.WriteLine(a);  
+        Console.ReadLine();  
+    }  
+}",
+    "firstAnswer": "10",
+    "secondAnswer": "0",
+	"thirdthAnswer": "Пустая строка",
+	"fourth": "Возникнет ошибка на этапе компиляции"
+  },
+  {
+    "$id": "18",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено в результате выполнения программы?
+class Program  
+{  
+    static void Main(string[] args)  
+    {  
+        string s1 = \"asd\";  
+        string s2 = \"qwe\";  
+        Swap(ref s1, ref s2);  
+        Console.WriteLine(\"s1: {0}, s2: {1}\", s1, s2);  
+        Console.ReadLine();  
+    }  
+  
+    public static void Swap(ref string s1, ref string s2)  
+    {  
+        string tmpString = s1;  
+        s1 = s2;  
+        s2 = tmpString;  
+    }  
+}
+",
+    "firstAnswer": "s1: qwe, s2: asd",
+    "secondAnswer": "s1: asd, s2: qwe",
+	"thirdthAnswer": "s1: qwe, s2: qwe",
+	"fourth": "Возникнет ошибка на этапе компиляции"
+  },
+  {
+    "$id": "19",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено в результате выполнения программы?
+class Program  
+{  
+    static void Main(string[] args)  
+    {  
+        Console.WriteLine(Average(5, 3, 7));  
+        Console.ReadLine();  
+    }  
+  
+    public static double Average(params int[] values)  
+    {  
+        double sum = 0;  
+        for (int i = 0; i < values.Length; i++)  
+        {  
+            sum += values[i];  
+        }  
+        return sum/values.Length;  
+    }  
+}  ",
+    "firstAnswer": "5",
+    "secondAnswer": "15",
+	"thirdthAnswer": "0",
+	"fourth": "Возникнет ошибка на этапе компиляции"
+  },
+  {
+    "$id": "20",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено на консоль?
+
+Console.WriteLine(Int16.MaxValue);",
+    "firstAnswer": "32767",
+    "secondAnswer": " 9223372036854775807",
+	"thirdthAnswer": "2147483647",
+	"fourth": "255"
+  },
+  {
+    "$id": "21",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено на консоль?
+
+Console.WriteLine(11 / 2);",
+    "firstAnswer": "5",
+    "secondAnswer": "6",
+	"thirdthAnswer": "5.5",
+	"fourth": "1"
+  },
+  {
+    "$id": "22",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено на консоль?
+
+float digit = 0 / 0f;        
+Console.WriteLine(digit == digit);",
+    "firstAnswer": "False",
+    "secondAnswer": "True",
+	"thirdthAnswer": "NaN",
+	"fourth": "Возникнет ошибка"
+  },
+  {
+    "$id": "23",
+    "typeTask": 2,
+    "taskDescription": "Верно ли, что тип string хранит набор символов Unicode?",
+    "firstAnswer": "Да",
+    "secondAnswer": "Нет, символы системы",
+	"thirdthAnswer": "Нет, только ASCII",
+	"fourth": ""
+  },
+  {
+    "$id": "24",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено на консоль?
+
+public static void Main(string[] args)
+{
+    {
+        int digit = 5;
+    }
+     
+    Console.WriteLine(digit);
+}",
+    "firstAnswer": "Возникнет ошибка",
+    "secondAnswer": "\"\"",
+	"thirdthAnswer": "5",
+	"fourth": "null"
+  },
+  {
+    "$id": "25",
+    "typeTask": 2,
+    "taskDescription": "Что будет выведено на консоль?
+
+bool isValid = 1;
+Console.WriteLine(isValid);",
+    "firstAnswer": "Возникнет ошибка",
+    "secondAnswer": "1",
+	"thirdthAnswer": "true",
+	"fourth": "false"
+  }
+]
